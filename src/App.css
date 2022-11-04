@@ -1,38 +1,141 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+:root {
+    /* ### Primary */
+  
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+  
+    /* ### Neutral */
+  
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
   }
+  
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+ 
+.main-container{
+    background-color: var(--Very-pale-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-height: 100vh;
+    align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
+  min-width: 40px;
+  background-color: var(--Desaturated-blue);
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px;
+ 
+
+}
+
+.container h1{
+  padding: 20px;
+  color: var(--Pale-blue);
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.counter{
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 2.5rem;
+
+}
+
+.container button{
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover{
+  background-color: hsl(212, 21%, 14%);
+  color: green;
+}
+
+.btn-secondary:hover{
+  background-color: hsl(212, 21%, 14%);
+  color: red;
+}
+
+.btn-neutral:hover{
+  background-color: hsl(212, 21%, 14%);
+  color: blue;
+}
+
+
+
+.navBar{
+  margin: 20px;
+  padding: 10px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  border-radius: 5px;
+  min-width: 50%;
+  }
+  
+  .navitem{
+    padding: 10px;
+    text-decoration: none;
+    color: var(--Dark-blue);
+    font-weight: 900;
+    font-size: 2rem;
+  
+  }
+  
+  body{
+    background-color: var(--Very-pale-blue);
+  }
+  
+
+  .AboutHead{
+    margin: 2rem;
+  }
+  .paragraph{
+    margin: 2rem;
+  }
+
+  .ErrorPage{
+   /* margin: 3rem; */
+  }
+
+  .ErrorPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+  }
+
+ .ErrorPage h2{
+  font-size: 4rem;
+
+ }
+
+ .linkBtn{
+  border: 1px solid var(--Bright-blue);
+  background-color: var(--Dark-blue);
+  padding: 10px;
+  text-decoration: none;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 3rem;
+ }
